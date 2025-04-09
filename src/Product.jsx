@@ -1,12 +1,24 @@
 import "./Product.css";
 
 function Product({ title, price, feature, extraFeature }) {
+  let isDiscount = price > 30000;
+  let design = { backgroundColor: isDiscount ? "skyblue" : "" };
   return (
-    <div className="Product">
+    <div className="Product" style={design}>
       <h2>Title: {title}</h2>
       <h4>Price: {price}</h4>
-      <h5>Features: {feature}</h5>
-      <p>Extra: {extraFeature}</p>
+      {isDiscount ? (
+        <p>Discount 5%</p>
+      ) : (
+        <a href="/">Get Discount</a>
+      )}
+      <h5>
+        Features:{" "}
+        {feature.map((el) => (
+          <li>{el}</li>
+        ))}
+      </h5>
+      <p>Extra: {extraFeature.os}</p>
     </div>
   );
 }

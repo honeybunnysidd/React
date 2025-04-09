@@ -9,19 +9,19 @@ function ProductTab() {
         title="Phone"
         price={20000}
         feature={option}
-        extraFeature={option2.camera}
+        extraFeature={{ os: "free Window" }}
       />
       <Product
         title="Laptop"
         price={50000}
         feature={option}
-        extraFeature={option2.os}
+        extraFeature={option2}
       />
       <Product
         title="PC"
         price={80000}
         feature={option}
-        extraFeature={option2.os}
+        extraFeature={option2}
       />
     </>
   );
