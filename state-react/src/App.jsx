@@ -12,8 +12,10 @@ function App() {
       {/* <h1>State in React</h1>
       <Counter /> */}
 
-      {/* Objets and State */}
+      {/* Objets and State - using Spread operator */}
       <LudoBoard />
+
+      {/* Array and state */}
     </>
   );
 }
