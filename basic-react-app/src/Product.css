@@ -1,0 +1,6 @@
+.Product {
+  border: 1px solid white;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  padding: 0.25rem 1rem 0.025rem 1rem;
+}
