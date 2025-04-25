@@ -15,9 +15,12 @@ export default function Counter() {
     });
   };
 
-  useEffect(function print() {
-    console.log("this is use Effect");
-  }, []);
+  useEffect(
+    function print() {
+      console.log("this is use Effect");
+    },
+    [countx]
+  );
 
   return (
     <div>
